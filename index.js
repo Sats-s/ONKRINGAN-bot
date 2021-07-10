@@ -50,7 +50,7 @@ const client = new CommandoClient({
 client.registry
   .registerDefaultTypes()
   .registerGroups([
-    ['test', ':notes: test Command Group:'],
+    ['main command', ':notes: main Command Group:'],
   ])
   .registerDefaultGroups()
   .registerDefaultCommands({
@@ -68,7 +68,7 @@ client.once('ready', () => {
   // console.log("Sudah siap:3")
   console.log('Sudah siap:3');
 
-  let statuses = [`H0rny Gang | e!help `, `Elaina supermercy | e!help `];
+  let statuses = [`I'M HORNY | e!help `, `Hololive supermercy | e!help `];
   setInterval(function() {
     let status = statuses[Math.floor(Math.random() * statuses.length)];
     client.user.setActivity(status, { type: 'PLAYING' });
