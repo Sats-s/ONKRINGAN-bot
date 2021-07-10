@@ -44,7 +44,7 @@ client.once('ready', () => {
   // console.log("Sudah siap:3")
   console.log('Sudah siap');
 
-  let statuses = [`H0rny Gang | e!help `, `Hololive Supermercy | e!help `];
+  let statuses = [`IM HORNY!`, `Hololive Supermercy :3 `];
   setInterval(function() {
     let status = statuses[Math.floor(Math.random() * statuses.length)];
     client.user.setActivity(status, { type: 'PLAYING' });
