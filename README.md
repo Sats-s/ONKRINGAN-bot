@@ -1,3 +1,4 @@
 # ONKRINGAN-bot
 A Discord bot onkringan
-<h100>AKU PRO!</h100>
+
+Discord server [ONKRINGAN](https://discord.gg/yhR5rgRq7p)
