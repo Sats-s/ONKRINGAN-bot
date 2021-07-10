@@ -1,1 +1,21 @@
-
+{
+  "prefix": "o!", 
+  "discord_owner_id": "503878501875580929",
+  "token": "ODYzMzExNjg4NTE4MzM2NTMy.YOlDqg.XiMbj-XowkJ6AbUMriTlAJvRXAA", 
+  "ownerId": ["503878501875580929", "821254364978479104"],
+  "tenorAPI": "LIVDSRZULELA",
+  "OPENWEATHERMAP_KEY": "30aa2815b64fb0e7889900ce490db943",
+  "CUSTOM_SEARCH_ID": "AIzaSyDpgjcctxXGFo3Zpl8iuJ-Dz5220i-X40k",
+  "TMDB_KEY": "58d73ed9d76eebacbfe798cc052b7340",
+  "newsAPI": "5864a2e2bf9d4ee398cd700eb448c41b",
+  "WHATANIME_KEY": "4d6df8fdeca6540b650d4577422c418269fc20d8",
+  "OSU_KEY": "441f1213aa8514f433384da76c2a88f2706bca40",
+  "youtubeAPI": "AIzaSyBcgE_qsiZJCmTsYMFVLCvcphF5Z37znSA",
+  "cacheTime": 300000,
+  "SUCCESS_EMOJI_ID": "757112445121593385",
+  "xpdata1": ["2", "5", "10"],
+   "xpdata2": ["2", "5", "10"],
+  "GOOGLE_KEY": "AIzaSyBcgE_qsiZJCmTsYMFVLCvcphF5Z37znSA",
+  "yandexAPI": "trnsl.1.1.20200313T151504Z.449bec1de1e18281.9225f6f2c49721967837f131d117fd22f1a1d65d",
+  "geniusLyricsAPI": "COSD3ks7Y1yLMd4wJzduwdH5FrCqG2cUiMbME07VxU8u9eX676zO10zvTXIzneZH"
+}
