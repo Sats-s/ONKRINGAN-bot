@@ -17,6 +17,30 @@ const Canvas = require('canvas');
 //db.fetch(`prefix_${message.guild.id}, text`)
 //};
 
+Structures.extend('Guild', function(Guild) {
+  class MusicGuild extends Guild {
+    constructor(client, data) {
+      super(client, data);
+      this.musicData = {
+        queue: [],
+        isPlaying: false,
+        nowPlaying: null,
+        songDispatcher: null,
+        skipTimer: false, // only skip if user used leave command
+        loopSong: false,
+        loopQueue: false,
+        volume: 1
+      };
+      this.triviaData = {
+        isTriviaRunning: false,
+        wasTriviaEndCalled: false,
+        triviaQueue: [],
+        triviaScore: new Map()
+      };
+    }
+  }
+  return MusicGuild;
+});
 
 const client = new CommandoClient({
   commandPrefix: prefix,
@@ -26,7 +50,7 @@ const client = new CommandoClient({
 client.registry
   .registerDefaultTypes()
   .registerGroups([
-    ['command', ':notes: command Command Group:'],
+    ['test', ':notes: test Command Group:'],
   ])
   .registerDefaultGroups()
   .registerDefaultCommands({
@@ -40,16 +64,16 @@ client.registry
   .registerCommandsIn(path.join(__dirname, 'commands'));
 
 client.once('ready', () => {
-  client.channels.cache.get('853262595263561759').send('Finish');
+  client.channels.cache.get('716670517846736936').send('Sudah siap');
   // console.log("Sudah siap:3")
-  console.log('Sudah siap');
+  console.log('Sudah siap:3');
 
-  let statuses = [`IM HORNY!`, `Hololive Supermercy :3 `];
+  let statuses = [`H0rny Gang | e!help `, `Elaina supermercy | e!help `];
   setInterval(function() {
     let status = statuses[Math.floor(Math.random() * statuses.length)];
     client.user.setActivity(status, { type: 'PLAYING' });
   }, 3000);
-  client.user.setStatus('DND');
+  client.user.setStatus('idle');
 });
 
 client.on('voiceStateUpdate', async (___, newState) => {
