@@ -1,3 +1,3 @@
 # ONKRINGAN-bot
 A Discord bot onkringan
-<h1>Coli!</h1>
+<h1>Gapapa ndar!</h1>
